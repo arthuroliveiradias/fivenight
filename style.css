@@ -1,0 +1,114 @@
+@charset "uft-8";
+
+@font-face {
+    font-family: font1;
+    src: url(./fontes/New\ Terror.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #000000;
+}
+
+
+h1 {
+    font-family: font1;
+    letter-spacing: 0.4em;
+    font-size: 3em;
+    color: #ffffff;
+    transform: translate(20%);
+    left: 50%;
+}
+
+.container {
+
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    background-color: #ffffff;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.bar:hover {
+    background: rgb(178, 28, 215);
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: .5s;
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0;
+
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -83.3333333333%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: aliceblue;
+}
